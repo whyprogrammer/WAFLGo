@@ -35,4 +35,4 @@ cp ./branch-distance-order.txt /home
 cp ./*-distance-order.txt /home
 cp ./*-order.txt /home
 
-/home/WAFLGo/afl-fuzz  -T waflgo-imagemagick -t 1000+ -m none -z exp -c 45m -q 1 -i /home/im -o /home/out -- /home/ImageMagick/fuzz/magick.ci  convert @@
+/home/WAFLGo/afl-fuzz  -T waflgo-imagemagick -t 1000+ -m none -z exp -c 45m -q 1 -i /home/jpg/ -o /home/ImageMagick-fuzz-output/ -- /home/ImageMagick-incomplete/fuzz/magick.ci  convert @@ /home/ImageMagick-fuzz-output/output.cip
